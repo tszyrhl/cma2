@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>How To Wash Hands</title>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+
+    <style>
+      .arjs-loader {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .arjs-loader div {
+        text-align: center;
+        font-size: 1.25em;
+        color: white;
+        font-family: sans-serif;
+      }
+
+    </style>
+	</head>
+
+	<body style="margin: 0px; overflow: hidden;">
+    <div class="arjs-loader"><div>Loading...</div></div>
+
+    <a-scene
+      vr-mode-ui="enabled: false;"
+      renderer="logarithmicDepthBuffer: true;"
+      embedded
+      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+
+      <a-nft
+        type="nft"
+        url="cma2/dettol"
+        smooth="true"
+        smoothCount="10"
+        smoothTolerance=".01"
+        smoothThreshold="5">
+
+        <a-entity>
+		<a-box position="250 250 0" src="hw.jpg" rotation="" color="" shadow="" material="" geometry="" scale="1140 5 641"></a-box>
+		</a-entity>
+      </a-nft>
+	  
+	  <a-nft
+        type="nft"
+        url="cma2/dettol2"
+        smooth="true"
+        smoothCount="10"
+        smoothTolerance=".01"
+        smoothThreshold="5">
+		
+		<a-entity>
+		<a-box position="450 450 0" src="hw.jpg" rotation="" color="" shadow="" material="" geometry="" scale="1140 5 641"></a-box>
+		</a-entity>
+      </a-nft>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+
+  </body>
+</html>
