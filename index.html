@@ -34,7 +34,7 @@
 	</head>
 
 	<body style="margin: 0px; overflow: hidden;">
-    <div class="arjs-loader"><div>Loading...</div></div>
+		<div class="arjs-loader"><div>Loading...</div></div>
 
     <a-scene
       vr-mode-ui="enabled: false;"
@@ -42,19 +42,19 @@
       embedded
       arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
 
-      <a-nft
-        type="nft"
-        url="cma2/dettol"
-        smooth="true"
-        smoothCount="10"
-        smoothTolerance="10"
-        smoothThreshold="20">
+		  <a-nft
+			type="nft"
+			url="cma2/dettol"
+			smooth="true"
+			smoothCount="10"
+			smoothTolerance="0.01"
+			smoothThreshold="5">
 
-        	<a-entity>
-		<a-box position="150 50 -10" src="hw.jpg" rotation="" color="" shadow="" material="" geometry="" scale="1140 5 641"></a-box>
-		</a-entity>
+			<a-entity>
+			<a-box position="0 0 -114" src="hw.jpg" rotation="90 0 0" scale="114 1 64"></a-box>
+			</a-entity>
 
-      <a-entity camera></a-entity>
+		  <a-entity camera></a-entity>
     </a-scene>
 
   </body>
